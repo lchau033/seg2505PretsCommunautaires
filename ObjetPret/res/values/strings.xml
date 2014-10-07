@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ObjetPret</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_inscription">Inscription</string>
+    <string name="title_activity_choisir_objet">Choisir un objet</string>
+    <string name="title_activity_ajouter_objet">Ajouter un objet</string>
+    <string name="title_activity_retirer_objet">Retirer un objet</string>
+    <string name="title_activity_rechercher_objet">Rechercherun objet</string>
+    <string name="title_activity_demande_pret">Demande de pret</string>
+    <string name="title_activity_modifier_profil">Modifier mon profil</string>
+    <string name="title_activity_evaluation">Evaluation</string>
+    <string name="title_activity_disponibilite_objet">Disponibilite d\'un objet</string>
+    <string name="title_activity_confirmer_emprunt">Confirmer l\'emprunt</string>
+    <string name="title_activity_confirmer_retour">Confirmer le retour</string>
+    
+    <string name="button_inscription">Inscription</string>
+    <string name="button_choisir_objet">Choisir</string>
+    <string name="button_ajouter_objet">Ajouter</string>
+    <string name="button_retirer_objet">Retirer</string>
+    <string name="button_rechercher_objet">Rechercher</string>
+    <string name="button_demande_pret">Demander</string>
+    <string name="button_modifier_profil">Profil</string>
+    <string name="button_evaluation">Evaluer</string>
+    <string name="button_disponibilite_objet">Disponibilite</string>
+    <string name="button_confirmer_emprunt">Confirmer</string>
+    <string name="button_confirmer_retour">Retourner</string>
+
+</resources>
