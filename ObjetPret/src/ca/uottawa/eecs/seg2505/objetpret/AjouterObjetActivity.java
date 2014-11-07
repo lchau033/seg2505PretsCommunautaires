@@ -11,7 +11,6 @@ public class AjouterObjetActivity extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_ajouter_objet);
-		getActionBar().setTitle("Ajouter un objet");
 	}
 
 	@Override
