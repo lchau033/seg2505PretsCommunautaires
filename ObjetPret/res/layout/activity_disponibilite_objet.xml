@@ -1,17 +1,179 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ca.uottawa.eecs.seg2505.objetpret.DisponibiliteObjetActivity" >
 
-    <TextView
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Objet:"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/item_list_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/item_array" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/current_item_description"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RadioGroup 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        
+    <RadioButton
+        android:id="@+id/en_demande_rbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title_activity_disponibilite_objet" />
+        android:text="En demande"
+        android:textSize="18sp" />
 
+    <RadioButton
+        android:id="@+id/disponible_rbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponible"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/non_disponible_rbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Non-disponible"
+        android:textSize="18sp" />
+    
+    <RadioButton
+        android:id="@+id/prete_rbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prete"
+        android:textSize="18sp" />
+    </RadioGroup>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Debut:"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/days_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/days_array" />
+
+        <Spinner
+            android:id="@+id/months_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/months_array" />
+
+        <Spinner
+            android:id="@+id/years_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/years_array" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Fin:"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@id/days_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/days_array" />
+
+        <Spinner
+            android:id="@id/months_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/months_array" />
+
+        <Spinner
+            android:id="@id/years_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/years_array" />
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+    android:id="@+id/LinearLayout02" 
+    android:layout_height="wrap_content" 
+    android:layout_width="fill_parent" 
+    android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/confirm_disponibility_button"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:onClick="confirmDisponibility"
+        android:text="Confirmer" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:onClick="annulerLesChangements"
+        android:text="Annuler" />
+
+</LinearLayout>
 </LinearLayout>
